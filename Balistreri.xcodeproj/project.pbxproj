@@ -11,6 +11,7 @@
 		1BA34213228070CE0017E61E /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA34212228070CE0017E61E /* DateUtility.swift */; };
 		1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */; };
 		1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */; };
+		1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D1952292EDCA00845766 /* MainTabBarController.swift */; };
 		E39E05D522524D3400752B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E05D422524D3400752B62 /* AppDelegate.swift */; };
 		E39E05DA22524D3400752B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39E05D822524D3400752B62 /* Main.storyboard */; };
 		E39E05DC22524D3700752B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39E05DB22524D3700752B62 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		1BA34212228070CE0017E61E /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOggettoAcquistabile.swift; sourceTree = "<group>"; };
+		1BD6D1952292EDCA00845766 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E39E05D122524D3400752B62 /* Balistreri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balistreri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E05D422524D3400752B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39E05D922524D3400752B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				1BA34212228070CE0017E61E /* DateUtility.swift */,
 				E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */,
 				1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */,
+				1BD6D1952292EDCA00845766 /* MainTabBarController.swift */,
 				E3DF1EE8225B8455007B4822 /* Utente.swift */,
 				E3DF1EEE225B9106007B4822 /* Evento.swift */,
 				E39E05D822524D3400752B62 /* Main.storyboard */,
@@ -172,6 +175,7 @@
 				E3DF1EEB225B8532007B4822 /* LoginUtility.swift in Sources */,
 				E3DF1EF3225B9D93007B4822 /* HomeController.swift in Sources */,
 				E39E05E72252643E00752B62 /* LoginController.swift in Sources */,
+				1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */,
 				E3DF1EF1225B9AB5007B4822 /* CellEvento.swift in Sources */,
 				1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */,
 				1BA34211228070940017E61E /* NetworkUtility.swift in Sources */,
