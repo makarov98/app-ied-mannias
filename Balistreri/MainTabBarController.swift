@@ -23,7 +23,7 @@ class MainTabBarController : UITabBarController {
         //Dimensione massima per le icone degli items
             if let tabBarItems = tabBar.items {
                 
-                let dimensioneIcone = CGSize(widht: 30.0, height: 30.0)
+                let dimensioneIcone = CGSize(width: 30.0, height: 30.0)
                 //Home
                 if tabBarItems.count >= 1 {
                 

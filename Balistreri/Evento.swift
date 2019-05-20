@@ -22,5 +22,7 @@ class Evento {
     var copertinaUrl: String?
     
     var indirizzo: String?
+    var coordinate: CLLocationCoordinate2D?
     
+    var oggettiAcquistabili
 }
