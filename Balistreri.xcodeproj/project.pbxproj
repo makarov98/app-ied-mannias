@@ -57,6 +57,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8A7910229C1EBC003B283B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1BA34210228070940017E61E /* NetworkUtility.swift */,
+				E3DF1EEA225B8532007B4822 /* LoginUtility.swift */,
+				1BA34212228070CE0017E61E /* DateUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1B8A7911229C1EC7003B283B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E39E05E62252643E00752B62 /* LoginController.swift */,
+				1BD6D1952292EDCA00845766 /* MainTabBarController.swift */,
+				E3DF1EEC225B86E0007B4822 /* SplashController.swift */,
+				E3DF1EF2225B9D93007B4822 /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1B8A7912229C1ECA003B283B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */,
+				E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B8A7913229C1F30003B283B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */,
+				E3DF1EEE225B9106007B4822 /* Evento.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B8A7914229C1F8A003B283B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E39E05D822524D3400752B62 /* Main.storyboard */,
+				E39E05DD22524D3700752B62 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		E39E05C822524D3400752B62 = {
 			isa = PBXGroup;
 			children = (
@@ -77,21 +125,13 @@
 			isa = PBXGroup;
 			children = (
 				E39E05D422524D3400752B62 /* AppDelegate.swift */,
-				1BA34210228070940017E61E /* NetworkUtility.swift */,
-				E39E05E62252643E00752B62 /* LoginController.swift */,
-				E3DF1EEA225B8532007B4822 /* LoginUtility.swift */,
-				E3DF1EEC225B86E0007B4822 /* SplashController.swift */,
-				1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */,
-				E3DF1EF2225B9D93007B4822 /* HomeController.swift */,
-				1BA34212228070CE0017E61E /* DateUtility.swift */,
-				E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */,
-				1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */,
-				1BD6D1952292EDCA00845766 /* MainTabBarController.swift */,
 				E3DF1EE8225B8455007B4822 /* Utente.swift */,
-				E3DF1EEE225B9106007B4822 /* Evento.swift */,
-				E39E05D822524D3400752B62 /* Main.storyboard */,
+				1B8A7914229C1F8A003B283B /* Storyboard */,
+				1B8A7910229C1EBC003B283B /* Utilities */,
+				1B8A7913229C1F30003B283B /* Models */,
+				1B8A7912229C1ECA003B283B /* Views */,
+				1B8A7911229C1EC7003B283B /* Controllers */,
 				E39E05DB22524D3700752B62 /* Assets.xcassets */,
-				E39E05DD22524D3700752B62 /* LaunchScreen.storyboard */,
 				E39E05E022524D3700752B62 /* Info.plist */,
 			);
 			path = Balistreri;
