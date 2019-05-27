@@ -406,6 +406,42 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-od-orR">
+                                <rect key="frame" x="273" y="74" width="92" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yWm-Sk-pid">
+                                    <size key="itemSize" width="92" height="127"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8VA-ev-PBa">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-50-UVW" customClass="UIBUtton">
+                                                    <rect key="frame" x="5" y="3" width="83" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="ewk-9E-KMb"/>
+                                                        <constraint firstAttribute="width" constant="24" id="ySC-aJ-Og7"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Gnn-50-UVW" secondAttribute="bottom" constant="16" id="G4J-fG-zKt"/>
+                                            <constraint firstItem="Gnn-50-UVW" firstAttribute="leading" secondItem="8VA-ev-PBa" secondAttribute="leading" constant="16" id="LJE-uv-f46"/>
+                                            <constraint firstItem="Gnn-50-UVW" firstAttribute="top" secondItem="8VA-ev-PBa" secondAttribute="top" constant="16" id="ct3-Bs-OZQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gnn-50-UVW" secondAttribute="trailing" constant="16" id="w0a-wH-fp8"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8im-l8-Ee8"/>
