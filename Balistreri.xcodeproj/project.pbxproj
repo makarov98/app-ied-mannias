@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B06BC92229D9536000E7498 /* PinMappa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B06BC91229D9536000E7498 /* PinMappa.swift */; };
+		1B06BC94229D97A0000E7498 /* DettaglioEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B06BC93229D97A0000E7498 /* DettaglioEventoController.swift */; };
 		1B7A19B4229C267200A0FF06 /* MappaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B3229C267200A0FF06 /* MappaController.swift */; };
 		1B7A19B6229C33FD00A0FF06 /* IEDNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B5229C33FD00A0FF06 /* IEDNetworking.swift */; };
 		1B7A19B8229C34E200A0FF06 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B7229C34E200A0FF06 /* Database.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B06BC91229D9536000E7498 /* PinMappa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMappa.swift; sourceTree = "<group>"; };
+		1B06BC93229D97A0000E7498 /* DettaglioEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEventoController.swift; sourceTree = "<group>"; };
 		1B7A19B3229C267200A0FF06 /* MappaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaController.swift; sourceTree = "<group>"; };
 		1B7A19B5229C33FD00A0FF06 /* IEDNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEDNetworking.swift; sourceTree = "<group>"; };
 		1B7A19B7229C34E200A0FF06 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -69,9 +73,9 @@
 			isa = PBXGroup;
 			children = (
 				1B7A19B9229C3F0000A0FF06 /* UIUtility.swift */,
+				1BA34212228070CE0017E61E /* DateUtility.swift */,
 				1BA34210228070940017E61E /* NetworkUtility.swift */,
 				E3DF1EEA225B8532007B4822 /* LoginUtility.swift */,
-				1BA34212228070CE0017E61E /* DateUtility.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -79,6 +83,7 @@
 		1B8A7911229C1EC7003B283B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B06BC93229D97A0000E7498 /* DettaglioEventoController.swift */,
 				E39E05E62252643E00752B62 /* LoginController.swift */,
 				1B7A19B3229C267200A0FF06 /* MappaController.swift */,
 				1BD6D1952292EDCA00845766 /* MainTabBarController.swift */,
@@ -103,6 +108,7 @@
 				E3DF1EE8225B8455007B4822 /* Utente.swift */,
 				E3DF1EEE225B9106007B4822 /* Evento.swift */,
 				1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */,
+				1B06BC91229D9536000E7498 /* PinMappa.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +230,7 @@
 				1BA34213228070CE0017E61E /* DateUtility.swift in Sources */,
 				E3DF1EEF225B9106007B4822 /* Evento.swift in Sources */,
 				E3DF1EE9225B8455007B4822 /* Utente.swift in Sources */,
+				1B06BC94229D97A0000E7498 /* DettaglioEventoController.swift in Sources */,
 				E39E05D522524D3400752B62 /* AppDelegate.swift in Sources */,
 				E3DF1EEB225B8532007B4822 /* LoginUtility.swift in Sources */,
 				E3DF1EF3225B9D93007B4822 /* HomeController.swift in Sources */,
@@ -233,6 +240,7 @@
 				1B7A19B6229C33FD00A0FF06 /* IEDNetworking.swift in Sources */,
 				1B7A19B4229C267200A0FF06 /* MappaController.swift in Sources */,
 				1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */,
+				1B06BC92229D9536000E7498 /* PinMappa.swift in Sources */,
 				1BA34211228070940017E61E /* NetworkUtility.swift in Sources */,
 				E3DF1EED225B86E0007B4822 /* SplashController.swift in Sources */,
 				1B7A19B8229C34E200A0FF06 /* Database.swift in Sources */,

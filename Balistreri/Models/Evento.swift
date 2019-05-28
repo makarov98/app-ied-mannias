@@ -24,5 +24,5 @@ class Evento {
     var indirizzo: String?
     var coordinate: CLLocationCoordinate2D?
     
-    var oggettiAcquistabili
+    var oggettiAcquistabili: [OggettoAcquistabile]?
 }

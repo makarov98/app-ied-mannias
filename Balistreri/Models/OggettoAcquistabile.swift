@@ -12,4 +12,12 @@ class OggettoAcquistabile {
     
     var id: Int?
     
+    var nome: String?
+    
+    var quantita: Int?
+    
+    var prezzo: Double?
+    
+    var immagineUrl: String?
+    
 }
