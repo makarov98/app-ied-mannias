@@ -7,5 +7,10 @@
 //
 
 import UIKit
+import MapKit
+
+class MappaController: UIViewController, MKMapViewDelegate {
+    let manager = CLLocationManager()
+}
 
 
