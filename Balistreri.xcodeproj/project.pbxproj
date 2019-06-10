@@ -15,6 +15,8 @@
 		1B7A19BA229C3F0000A0FF06 /* UIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B9229C3F0000A0FF06 /* UIUtility.swift */; };
 		1BA34211228070940017E61E /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA34210228070940017E61E /* NetworkUtility.swift */; };
 		1BA34213228070CE0017E61E /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA34212228070CE0017E61E /* DateUtility.swift */; };
+		1BABC6F222AE931800232E5E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABC6F122AE931800232E5E /* Network.swift */; };
+		1BABC6F422AEA90B00232E5E /* NetworkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABC6F322AEA90B00232E5E /* NetworkParser.swift */; };
 		1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */; };
 		1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */; };
 		1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D1952292EDCA00845766 /* MainTabBarController.swift */; };
@@ -40,6 +42,8 @@
 		1B7A19B9229C3F0000A0FF06 /* UIUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtility.swift; sourceTree = "<group>"; };
 		1BA34210228070940017E61E /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		1BA34212228070CE0017E61E /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		1BABC6F122AE931800232E5E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1BABC6F322AEA90B00232E5E /* NetworkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParser.swift; sourceTree = "<group>"; };
 		1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BD6D1952292EDCA00845766 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,16 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		1BABC6F022AE928000232E5E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1BABC6F122AE931800232E5E /* Network.swift */,
+				1BABC6F322AEA90B00232E5E /* NetworkParser.swift */,
+				1B7A19B5229C33FD00A0FF06 /* IEDNetworking.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		E39E05C822524D3400752B62 = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +157,7 @@
 			children = (
 				E39E05D422524D3400752B62 /* AppDelegate.swift */,
 				1B7A19B7229C34E200A0FF06 /* Database.swift */,
-				1B7A19B5229C33FD00A0FF06 /* IEDNetworking.swift */,
+				1BABC6F022AE928000232E5E /* Network */,
 				1B8A7914229C1F8A003B283B /* Storyboard */,
 				1B8A7910229C1EBC003B283B /* Utilities */,
 				1B8A7913229C1F30003B283B /* Models */,
@@ -236,8 +250,10 @@
 				E3DF1EF3225B9D93007B4822 /* HomeController.swift in Sources */,
 				E39E05E72252643E00752B62 /* LoginController.swift in Sources */,
 				1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */,
+				1BABC6F222AE931800232E5E /* Network.swift in Sources */,
 				E3DF1EF1225B9AB5007B4822 /* CellEvento.swift in Sources */,
 				1B7A19B6229C33FD00A0FF06 /* IEDNetworking.swift in Sources */,
+				1BABC6F422AEA90B00232E5E /* NetworkParser.swift in Sources */,
 				1B7A19B4229C267200A0FF06 /* MappaController.swift in Sources */,
 				1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */,
 				1B06BC92229D9536000E7498 /* PinMappa.swift in Sources */,
