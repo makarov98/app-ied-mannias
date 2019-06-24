@@ -47,7 +47,7 @@
 		1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BD6D1952292EDCA00845766 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		E39E05D122524D3400752B62 /* Balistreri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balistreri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E05D122524D3400752B62 /* UmarellApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UmarellApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39E05D422524D3400752B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39E05D922524D3400752B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E39E05DB22524D3700752B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		E39E05C822524D3400752B62 = {
 			isa = PBXGroup;
 			children = (
-				E39E05D322524D3400752B62 /* Balistreri */,
+				E39E05D322524D3400752B62 /* UmarellApp */,
 				E39E05D222524D3400752B62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,12 +147,12 @@
 		E39E05D222524D3400752B62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E39E05D122524D3400752B62 /* Balistreri.app */,
+				E39E05D122524D3400752B62 /* UmarellApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E39E05D322524D3400752B62 /* Balistreri */ = {
+		E39E05D322524D3400752B62 /* UmarellApp */ = {
 			isa = PBXGroup;
 			children = (
 				E39E05D422524D3400752B62 /* AppDelegate.swift */,
@@ -166,15 +166,15 @@
 				E39E05DB22524D3700752B62 /* Assets.xcassets */,
 				E39E05E022524D3700752B62 /* Info.plist */,
 			);
-			path = Balistreri;
+			path = UmarellApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E39E05D022524D3400752B62 /* Balistreri */ = {
+		E39E05D022524D3400752B62 /* UmarellApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E39E05E322524D3700752B62 /* Build configuration list for PBXNativeTarget "Balistreri" */;
+			buildConfigurationList = E39E05E322524D3700752B62 /* Build configuration list for PBXNativeTarget "UmarellApp" */;
 			buildPhases = (
 				E39E05CD22524D3400752B62 /* Sources */,
 				E39E05CE22524D3400752B62 /* Frameworks */,
@@ -184,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = Balistreri;
+			name = UmarellApp;
 			productName = Balistreri;
-			productReference = E39E05D122524D3400752B62 /* Balistreri.app */;
+			productReference = E39E05D122524D3400752B62 /* UmarellApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E39E05CC22524D3400752B62 /* Build configuration list for PBXProject "Balistreri" */;
+			buildConfigurationList = E39E05CC22524D3400752B62 /* Build configuration list for PBXProject "UmarellApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E39E05D022524D3400752B62 /* Balistreri */,
+				E39E05D022524D3400752B62 /* UmarellApp */,
 			);
 		};
 /* End PBXProject section */
@@ -410,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.ied.Balistreri;
+				PRODUCT_BUNDLE_IDENTIFIER = it.ied.UmarellApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,7 +427,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.ied.Balistreri;
+				PRODUCT_BUNDLE_IDENTIFIER = it.ied.UmarellApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E39E05CC22524D3400752B62 /* Build configuration list for PBXProject "Balistreri" */ = {
+		E39E05CC22524D3400752B62 /* Build configuration list for PBXProject "UmarellApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E39E05E122524D3700752B62 /* Debug */,
@@ -446,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E39E05E322524D3700752B62 /* Build configuration list for PBXNativeTarget "Balistreri" */ = {
+		E39E05E322524D3700752B62 /* Build configuration list for PBXNativeTarget "UmarellApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E39E05E422524D3700752B62 /* Debug */,

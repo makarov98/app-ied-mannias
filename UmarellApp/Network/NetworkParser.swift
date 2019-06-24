@@ -24,7 +24,6 @@ import UIKit
                 }
             }
         }
-        
         return meteo
     }
 }

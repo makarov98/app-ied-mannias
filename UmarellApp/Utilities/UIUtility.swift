@@ -11,7 +11,7 @@ class UIUtility {
     static func resizeImage(_image: UIImage?, targetSize: CGSize) -> UIImage {
         
         // controllo se l'immagine passata esiste
-        guard let image = image else {
+        guard let image = _image_image else {
             return nil
         }
     }
@@ -41,7 +41,7 @@ class UIUtility {
 }
 
     static func arrotondaAngoloCerchio(_view: UIView) {
-        view.layer.cornerRadius = view.frame.size.height / 2.0
-        view.layer.masksToBounds = true
+        _view_view.layer.cornerRadius = _view.frame.size.height / 2.0
+        _view.layer.masksToBounds = true
     }
 }
