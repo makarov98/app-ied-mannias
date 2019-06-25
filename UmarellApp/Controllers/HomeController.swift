@@ -39,7 +39,7 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
         uno.indirizzo = "Via Alcamo 11, Roma, Italia"
         uno.data = DateUtility.data(conStringa: "01/04/2018", formato: "dd/MM/yyyy")
         uno.prezzo = 55.0
-        uno.copertinaUrl = "https://images.unsplash.com/photo-1509732057623-c8a63eb59dd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+        uno.copertinaUrl = "http://images.unsplash.com/photo-1509732057623-c8a63eb59dd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         
         // Lo aggiungo alla lista
         listaEventi.append(uno)

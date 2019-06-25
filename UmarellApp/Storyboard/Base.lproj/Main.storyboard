@@ -226,6 +226,7 @@
                                             <outlet property="labelIndirizzo" destination="7M7-z3-Kqs" id="0GH-eJ-Qbi"/>
                                             <outlet property="labelNome" destination="kXR-NJ-xAz" id="bpp-RD-OtJ"/>
                                             <outlet property="labelPrezzo" destination="GXh-jb-Yyc" id="XTV-sA-MKP"/>
+                                            <segue destination="7f9-Sj-Dod" kind="show" id="qGu-KH-Ybx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -442,7 +443,6 @@
                                                     <rect key="frame" x="5" y="3" width="83" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="ewk-9E-KMb"/>
-                                                        <constraint firstAttribute="width" constant="24" id="ySC-aJ-Og7"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
