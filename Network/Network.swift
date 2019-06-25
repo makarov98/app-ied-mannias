@@ -21,18 +21,15 @@ class Network {
             if risposta.success {
                 
                 // Controllo se i dati ricevuti sono del tipo che mi aspettavo
-                if temperatura = risposta.data as? Int {
+                if let temperatura = risposta.data as? Int {
                     
                     print("La temperatura a Roma è di \(temperatura) °C")
                 }
             }
         }
         
-        static func ripostaDelServerArrivata(_ risposta: Any) {
-            // Code
-        }
-        
     }
+    
     
     typealias CompletitionMeteo = ((Meteo?) -> Void)
     

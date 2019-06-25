@@ -31,6 +31,7 @@
 		E3DF1EEF225B9106007B4822 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EEE225B9106007B4822 /* Evento.swift */; };
 		E3DF1EF1225B9AB5007B4822 /* CellEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */; };
 		E3DF1EF3225B9D93007B4822 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EF2225B9D93007B4822 /* HomeController.swift */; };
+		FD5148BC22C26D8100B87810 /* Meteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5148BB22C26D8100B87810 /* Meteo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		E3DF1EEE225B9106007B4822 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEvento.swift; sourceTree = "<group>"; };
 		E3DF1EF2225B9D93007B4822 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FD5148BB22C26D8100B87810 /* Meteo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				E3DF1EE8225B8455007B4822 /* Utente.swift */,
+				FD5148BB22C26D8100B87810 /* Meteo.swift */,
 				E3DF1EEE225B9106007B4822 /* Evento.swift */,
 				1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */,
 				1B06BC91229D9536000E7498 /* PinMappa.swift */,
@@ -260,6 +263,7 @@
 				1BA34211228070940017E61E /* NetworkUtility.swift in Sources */,
 				E3DF1EED225B86E0007B4822 /* SplashController.swift in Sources */,
 				1B7A19B8229C34E200A0FF06 /* Database.swift in Sources */,
+				FD5148BC22C26D8100B87810 /* Meteo.swift in Sources */,
 				1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Balistreri/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UmarellApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Balistreri/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UmarellApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

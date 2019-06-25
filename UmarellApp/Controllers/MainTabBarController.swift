@@ -20,29 +20,30 @@ class MainTabBarController : UITabBarController {
         //Prendo i "TabBarItem" che compongono l'app
         if let tabBarItems = tabBar.items {
             
-        //Dimensione massima per le icone degli items
+            //Dimensione massima per le icone degli items
             if let tabBarItems = tabBar.items {
                 
                 let dimensioneIcone = CGSize(width: 30.0, height: 30.0)
                 //Home
                 if tabBarItems.count >= 1 {
-                
-                let itemHome = tabBarItems[0]
-                
-                itemHome.title = "Home"
+                    
+                    let itemHome = tabBarItems[0]
+                    
+                    itemHome.title = "Home"
                 }
                 
                 //Mappa
                 if tabBarItems.count >= 1 {
-                //Prendo il tabBarItem
-                let itemHome = tabBarItems[1]
-                
-                //Cambio il titolo
-                itemHome.title = "Mappa"
+                    //Prendo il tabBarItem
+                    let itemHome = tabBarItems[1]
+                    
+                    //Cambio il titolo
+                    itemHome.title = "Mappa"
+                    
+                    //Cambio l'icona
+                    let image = UIImage (named: "calendar")
+                    itemHome.image = UIUtility.resizeImage(image,targetSize: dimensioneIcone)
                 }
-                //Cambio l'icona
-                let image = UIImage (named: "calendar")
-                itemHome.image = UIUtility.resizedImage(image,targetSize: dimensioneIcone)
             }
         }
     }

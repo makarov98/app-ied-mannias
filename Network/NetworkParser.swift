@@ -7,23 +7,24 @@
 //
 
 import UIKit
+
+class NetworkParser {
     
-    class NetworkParser {
+    static func parserMeteo(conData data: IEDDictionary) -> Meteo? {
         
-        static func parserMeteo(conData data: IEDDictionary) -> Meteo? {
-            
-            let meteo = meteo()
-            
-            if let main = data["main"] as? IEDDictionary {
-                meteo.temperatura = main["temp"] as? Double
-            }
-            
-            if let weather = data["weather"] as? IEDArray {
-                if let firstWeather = weather.first as? IEDDictionary {
-                    meteo.descrizione = firstWeather["description"] as? String
-                }
+        let meteo = Meteo()
+        
+        if let main = data["main"] as? IEDDictionary {
+            meteo.temperatura = main["temp"] as? Double
+        }
+        
+        if let weather = data["weather"] as? IEDArray {
+            if let firstWeather = weather.first {
+                meteo.descrizione = firstWeather["description"] as? String
             }
         }
+        
         return meteo
     }
+    
 }

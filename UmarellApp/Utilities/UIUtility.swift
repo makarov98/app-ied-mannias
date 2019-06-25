@@ -8,13 +8,13 @@
 
 import UIKit
 class UIUtility {
-    static func resizeImage(_image: UIImage?, targetSize: CGSize) -> UIImage {
+    static func resizeImage(_ image: UIImage?, targetSize: CGSize) -> UIImage? {
         
         // controllo se l'immagine passata esiste
-        guard let image = _image_image else {
+        guard let image = image else {
             return nil
         }
-    }
+    
     
     let size = image.size
     
@@ -31,7 +31,7 @@ class UIUtility {
     
     let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
     
-    UIGraphicsBeginImageContexWithOptions(newSize, false 0,0)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
     image.draw(in: rect)
     
     let newImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -40,8 +40,8 @@ class UIUtility {
     return newImage!
 }
 
-    static func arrotondaAngoloCerchio(_view: UIView) {
-        _view_view.layer.cornerRadius = _view.frame.size.height / 2.0
-        _view.layer.masksToBounds = true
+    static func arrotondaAngoloCerchio(_ view: UIView) {
+        view.layer.cornerRadius = view.frame.size.height / 2.0
+        view.layer.masksToBounds = true
     }
 }

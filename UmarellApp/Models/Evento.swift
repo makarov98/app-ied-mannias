@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class Evento {
     
@@ -25,4 +26,5 @@ class Evento {
     var coordinate: CLLocationCoordinate2D?
     
     var oggettiAcquistabili: [OggettoAcquistabile]?
+    
 }

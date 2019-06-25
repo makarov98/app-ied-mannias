@@ -32,10 +32,8 @@ class Database {
         acquistabileUno.prezzo = 10
         acquistabileUno.immagineUrl = "https://images.unsplash.com/photo-1508963493744-76fce69379c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         
-        uno.oggettiAcquistabili = [acquistabileUno]
-        
         //lo aggiungiamo agli oggetti acquistabili
-        uno.oggettiAcquistabili = [acquistabileUno, acquistabileDue]
+        uno.oggettiAcquistabili = [acquistabileUno]
         
         //lo aggiungiamo alla lista
         eventi.append(uno)
