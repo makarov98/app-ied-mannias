@@ -7,41 +7,51 @@
 //
 
 import UIKit
-class UIUtility {
+
+class UIUtility: NSObject {
+    
     static func resizeImage(_ image: UIImage?, targetSize: CGSize) -> UIImage? {
-        
-        // controllo se l'immagine passata esiste
-        guard let image = image else {
+        //Controllo se l'immagine passata esiste
+        guard let image =  image else{
             return nil
         }
-    
-    
-    let size = image.size
-    
-    let widthRatio = targetSize.width / size.width
-    let heightRatio = targetSize.height / size.height
-    
-    var newSize: CGSize
-    
-    if widthRatio > heightRatio {
-        newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
-    } else {
-        newSize = CGSize(width: size.width * widthRatio, height: size.height * widthRatio)
+        let size = image.size
+        
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+        
+        // Figure out what our orientation is, and use that to form the rectangle
+        var newSize: CGSize
+        
+        if widthRatio > heightRatio {
+            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+        } else {
+            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+        }
+        
+        // This is the rect that we've calculated out and this is what is actually used below
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        // Actually do the resizing to the rect using the ImageContext stuff
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        image.draw(in: rect)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
     }
     
-    let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-    
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
-    image.draw(in: rect)
-    
-    let newImage = UIGraphicsGetImageFromCurrentImageContext()
-    UIGraphicsEndImageContext()
-    
-    return newImage!
-}
-
-    static func arrotondaAngoloCerchio(_ view: UIView) {
+    //Funziona che arrotonda angoli della view specificata per farli diventare un cerchio
+    static func arrotondaAngoliCercho(_ view: UIView){
         view.layer.cornerRadius = view.frame.size.height / 2.0
         view.layer.masksToBounds = true
+        
     }
+    
+    static func arrotondaAngoli(_ view: UIView, raggio: CGFloat){
+        view.layer.cornerRadius = raggio
+        view.layer.masksToBounds = true
+    }
+    
 }

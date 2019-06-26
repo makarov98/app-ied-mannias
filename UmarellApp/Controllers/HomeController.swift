@@ -10,57 +10,99 @@ import UIKit
 
 class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    /// La lista degli eventi da disegnare sulla TableView
-    var listaEventi: [Evento] = []
+    //Lista degli eventi da disegnare nella tabella
+    var listaEventi :[Evento] = []
     
-    
-    // MARK: - Outlets
-    
+    // MARK
     @IBOutlet weak var tableView: UITableView!
     
-    
-    // MARK: - Setup della schermata
-    
+    // MARK: - Set up schermata
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // Questo serve per comunicare con la TableView:
+        //Cambio il titolo della schermata
+        navigationItem.title = "Lista eventi"
+        
+        
+        
+        //Metto in comunicazione la table view
         tableView.delegate = self
         tableView.dataSource = self
         
-        creaEventiDiProva()
+        listaEventi = Database.eventi
     }
     
-    func creaEventiDiProva() {
-        // Creo un evento di prova
-        let uno = Evento()
-        uno.nome = "Lezione App Design"
-        uno.indirizzo = "Via Alcamo 11, Roma, Italia"
-        uno.data = DateUtility.data(conStringa: "01/04/2018", formato: "dd/MM/yyyy")
-        uno.prezzo = 55.0
-        uno.copertinaUrl = "http://images.unsplash.com/photo-1509732057623-c8a63eb59dd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        // Lo aggiungo alla lista
-        listaEventi.append(uno)
+        aggiornaPulsanteCarrello()
+        
+    }
+    
+    // MARK : - Funzioni
+    func aggiornaPulsanteCarrello(){
+        //Aggiungo/aggiorno il pulsante per il carrello
+        let buttonCarrello = UIBarButtonItem.init(image: CartUtility.iconaCarrello(), style: .plain, target: self, action: #selector(apriCarrello))
+        navigationItem.rightBarButtonItem = buttonCarrello
+    }
+    
+    @objc func apriCarrello(){
+        
+        //Instanzio lo storyboard del viewcontroller
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        //Instanzio il viewcontroller del carrello
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CartController")
+        
+        //Creo un navigation controller per avere la barra superiore
+        let navigationController = UINavigationController.init(rootViewController: viewController)
+        
+        //Presento il viewController come "modale"
+        present(navigationController, animated: true)
+        
     }
     
     
-    // MARK: - TableView delegate
+    
+    // MARK : - Table view delegates
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // In questa funzione l'HomeController comunica alla TableView il numero di righe che deve disegnare
+        //In questa funzione l?homeController comunica all aTable view il numero di rghe da disegnare
         return listaEventi.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // In questa funzione l'HomeController comunica alla TableView COME deve disegnare ogni riga (con quale UI, con quali dati, ecc...)
+        //In questa funzione l?homeController comunica all aTable view come disegare ogni riga(dati , ui,ecc..)
         let cella = tableView.dequeueReusableCell(withIdentifier: "CellEvento") as! CellEvento
         
         let evento = listaEventi[indexPath.row]
         cella.setupConEvento(evento)
         
+        
         return cella
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Recupero l'evento associato alla cella selezionata dall'utente
+        
+        let eventoSelezionato = listaEventi[indexPath.row]
+        
+        //Creo la prossima schermata di dettaglio dell'evento
+        
+        //1. Prendo un riferimento allo storyboard dove risiede il view controller
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        //2. Instanzio il view controller attraverso il suo identifier
+        let viewController = storyboard.instantiateViewController(withIdentifier: "DettaglioEventoController")
+        
+        //3. Passo l'evento selezionato al view controller
+        if let dettaglioController = viewController as? DettaglioEventoController{
+            dettaglioController.evento = eventoSelezionato
+        }
+        
+        //4. Apro il view controller in questione
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

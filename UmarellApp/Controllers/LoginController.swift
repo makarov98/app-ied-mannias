@@ -8,55 +8,76 @@
 
 import UIKit
 
-class LoginController : UIViewController {
+class LoginController: UIViewController {
     
-    // MARK: - Outlets
+    // MARK: - Outlet
+    
     
     @IBOutlet weak var textEmail: UITextField!
     
+    
     @IBOutlet weak var textPassword: UITextField!
     
-    @IBOutlet weak var buttonAccedi: UIButton!
+    @IBOutlet weak var accediButton: UIButton!
     
-    
-    // MARK: - Setup della schermata
-    
-    override func viewDidLoad() {
+    override func viewDidLoad() {           // Do any additional setup after loading the view.
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        // Arrotondamento angoli text email
-        textEmail.layer.cornerRadius = textEmail.frame.size.height / 2.0
+        textEmail.layer.cornerRadius = textEmail.frame.size.height/2.0
         textEmail.layer.masksToBounds = true
         
-        // Bordo text email
-        textEmail.layer.borderWidth = 1.0
-        textEmail.layer.borderColor = UIColor.black.cgColor
-        
-        // Arrotondamento angoli text password
-        // (circolare e dinamico in base all'altezza)
         textPassword.layer.cornerRadius = textPassword.frame.size.height / 2.0
         textPassword.layer.masksToBounds = true
         
+        accediButton.layer.cornerRadius = accediButton.frame.size.height / 2.0
+        accediButton.layer.masksToBounds = true
+    }
+    
+    // Mark :- Funzioni
+    private func controllaValiditaDatiInseriti() -> Bool {
+        
+        //Controllo il campo delle email
+        if textEmail.text == nil || textEmail.text == ""{
+            AlertUtility.mostraAler(titolo: "Login errato", messaggio: "Le credenziali inserite sono sbagliate", viewController: self)
+            return false
+        }
+        
+        //Controllo il campo della password
+        if textPassword.text == nil || textPassword.text == ""{
+            AlertUtility.mostraAler(titolo: "Login errato", messaggio: "Le credenziali inserite sono sbagliate", viewController: self)
+            return false
+        }
+        //Tutto ok
+        return true
     }
     
     
-    // MARK: - Actions
-
+    // MARK : - Action
+    
     @IBAction func buttonAccedi(_ sender: Any) {
         
-        // Controllo se la mail è giusta
-        if textEmail.text == "ciao@gmail.com" {
+        guard controllaValiditaDatiInseriti() else {
+            //Dati non validi
+            return
+        }
+        Network.richiestaLogin(conEmail: textEmail.text, password: textPassword.text) {
+            (utente) in
             
-            // Controllo se la password è giusta
-            if textPassword.text == "password" {
+            if let utente = utente{
+                //Login riuscito
+                print("Login riuscito")
                 
-                // OK
-                print("Accesso eseguito!")
+                //Salvo in memoria l'utente appena ricevuto dal server
+                LoginUtility.utenteConnesso = utente
                 
-                performSegue(withIdentifier: "VaiAllaHome", sender: self)
+                //Vado alla home
+                self.performSegue(withIdentifier: "vaiAllaHome", sender: self)
+                
+            } else {
+                AlertUtility.mostraAler(titolo: "Login errato", messaggio: "Le credenziali inserite sono sbagliate", viewController: self)
             }
         }
+        print("Dati validi")
     }
     
 }

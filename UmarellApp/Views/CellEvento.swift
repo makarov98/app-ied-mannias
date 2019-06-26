@@ -9,7 +9,7 @@
 import UIKit
 
 class CellEvento : UITableViewCell {
-
+    
     // MARK: - Outlets
     
     @IBOutlet weak var labelData: UILabel!

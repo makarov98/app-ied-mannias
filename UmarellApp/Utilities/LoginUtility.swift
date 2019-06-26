@@ -8,11 +8,9 @@
 
 import UIKit
 
-/** Classe che semplifica l'interazione con il database per capire se c'è un utente connesso sull'app */
-
 class LoginUtility {
+    /** Classe che semplifica l'interazione con il database per capire se c'è un utente connesso all'app**/
     
-    /// L'eventuale utente connesso
-    static var utenteConnesso: Utente? = Utente()
+    static var utenteConnesso : Utente?
     
 }

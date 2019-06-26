@@ -8,16 +8,20 @@
 
 import UIKit
 
-class OggettoAcquistabile {
+class OggettoAcquistabile: Comparable {
+    static func < (lhs: OggettoAcquistabile, rhs: OggettoAcquistabile) -> Bool {
+        return (lhs.id  ?? 0) < (rhs.id ?? 0)
+    }
     
-    var id: Int?
+    static func == (lhs: OggettoAcquistabile, rhs: OggettoAcquistabile) -> Bool {
+        //Confronto i nomi degli oggetti nel carrello
+        return lhs.nome == rhs.nome
+    }
     
-    var nome: String?
     
-    var quantita: Int?
-    
-    var prezzo: Double?
-    
+    var id:Int?
+    var nome:String?
+    var quantità:Int?
+    var prezzo:Double?
     var immagineUrl: String?
-    
 }
