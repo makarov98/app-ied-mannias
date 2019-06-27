@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B06BC92229D9536000E7498 /* PinMappa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B06BC91229D9536000E7498 /* PinMappa.swift */; };
 		1B06BC94229D97A0000E7498 /* DettaglioEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B06BC93229D97A0000E7498 /* DettaglioEventoController.swift */; };
+		1B722AD822C4A65100F56E63 /* Meteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B722AD722C4A65100F56E63 /* Meteo.swift */; };
 		1B7A19B4229C267200A0FF06 /* MappaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B3229C267200A0FF06 /* MappaController.swift */; };
 		1B7A19B6229C33FD00A0FF06 /* IEDNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B5229C33FD00A0FF06 /* IEDNetworking.swift */; };
 		1B7A19B8229C34E200A0FF06 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A19B7229C34E200A0FF06 /* Database.swift */; };
@@ -20,7 +21,6 @@
 		1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */; };
 		1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */; };
 		1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D1952292EDCA00845766 /* MainTabBarController.swift */; };
-		1BF4597222C36C36001CB2E5 /* Meteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597122C36C36001CB2E5 /* Meteo.swift */; };
 		1BF4597822C38A47001CB2E5 /* CellCarrello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597722C38A47001CB2E5 /* CellCarrello.swift */; };
 		1BF4597B22C38B2B001CB2E5 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597A22C38B2B001CB2E5 /* SplashController.swift */; };
 		1BF4597E22C38B62001CB2E5 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597D22C38B62001CB2E5 /* RegisterController.swift */; };
@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1B06BC91229D9536000E7498 /* PinMappa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMappa.swift; sourceTree = "<group>"; };
 		1B06BC93229D97A0000E7498 /* DettaglioEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioEventoController.swift; sourceTree = "<group>"; };
+		1B722AD722C4A65100F56E63 /* Meteo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteo.swift; sourceTree = "<group>"; };
 		1B7A19B3229C267200A0FF06 /* MappaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaController.swift; sourceTree = "<group>"; };
 		1B7A19B5229C33FD00A0FF06 /* IEDNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEDNetworking.swift; sourceTree = "<group>"; };
 		1B7A19B7229C34E200A0FF06 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BD6D1952292EDCA00845766 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		1BF4597122C36C36001CB2E5 /* Meteo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meteo.swift; path = ../../../../Downloads/Umarell/UmarellApp/Models/Meteo.swift; sourceTree = "<group>"; };
 		1BF4597722C38A47001CB2E5 /* CellCarrello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCarrello.swift; sourceTree = "<group>"; };
 		1BF4597A22C38B2B001CB2E5 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashController.swift; path = ../ViewControllers/SplashController.swift; sourceTree = "<group>"; };
 		1BF4597D22C38B62001CB2E5 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E3DF1EE8225B8455007B4822 /* Utente.swift */,
-				1BF4597122C36C36001CB2E5 /* Meteo.swift */,
+				1B722AD722C4A65100F56E63 /* Meteo.swift */,
 				E3DF1EEE225B9106007B4822 /* Evento.swift */,
 				1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */,
 				1B06BC91229D9536000E7498 /* PinMappa.swift */,
@@ -291,11 +291,11 @@
 				1BF4598622C38CA7001CB2E5 /* CartUtility.swift in Sources */,
 				1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */,
 				1B06BC92229D9536000E7498 /* PinMappa.swift in Sources */,
+				1B722AD822C4A65100F56E63 /* Meteo.swift in Sources */,
 				1BA34211228070940017E61E /* NetworkUtility.swift in Sources */,
 				E3DF1EED225B86E0007B4822 /* SplashController.swift in Sources */,
 				1B7A19B8229C34E200A0FF06 /* Database.swift in Sources */,
 				1BF4598422C38C8C001CB2E5 /* LocationUtility.swift in Sources */,
-				1BF4597222C36C36001CB2E5 /* Meteo.swift in Sources */,
 				1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
