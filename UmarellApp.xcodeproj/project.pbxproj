@@ -20,9 +20,11 @@
 		1BABC6F422AEA90B00232E5E /* NetworkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BABC6F322AEA90B00232E5E /* NetworkParser.swift */; };
 		1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */; };
 		1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */; };
+		1BC2DBE822C511AE008A94B1 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2DBE722C511AE008A94B1 /* SplashController.swift */; };
+		1BC2DBEA22C511EE008A94B1 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2DBE922C511ED008A94B1 /* Sound.swift */; };
+		1BC2DBED22C5139B008A94B1 /* 209578__zott820__cash-register-purchase.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BC2DBEC22C5139B008A94B1 /* 209578__zott820__cash-register-purchase.wav */; };
 		1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D1952292EDCA00845766 /* MainTabBarController.swift */; };
 		1BF4597822C38A47001CB2E5 /* CellCarrello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597722C38A47001CB2E5 /* CellCarrello.swift */; };
-		1BF4597B22C38B2B001CB2E5 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597A22C38B2B001CB2E5 /* SplashController.swift */; };
 		1BF4597E22C38B62001CB2E5 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597D22C38B62001CB2E5 /* RegisterController.swift */; };
 		1BF4598022C38B81001CB2E5 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4597F22C38B81001CB2E5 /* ProfileController.swift */; };
 		1BF4598222C38C12001CB2E5 /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4598122C38C12001CB2E5 /* CartController.swift */; };
@@ -36,7 +38,6 @@
 		E39E05E72252643E00752B62 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39E05E62252643E00752B62 /* LoginController.swift */; };
 		E3DF1EE9225B8455007B4822 /* Utente.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EE8225B8455007B4822 /* Utente.swift */; };
 		E3DF1EEB225B8532007B4822 /* LoginUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EEA225B8532007B4822 /* LoginUtility.swift */; };
-		E3DF1EED225B86E0007B4822 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EEC225B86E0007B4822 /* SplashController.swift */; };
 		E3DF1EEF225B9106007B4822 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EEE225B9106007B4822 /* Evento.swift */; };
 		E3DF1EF1225B9AB5007B4822 /* CellEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */; };
 		E3DF1EF3225B9D93007B4822 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DF1EF2225B9D93007B4822 /* HomeController.swift */; };
@@ -56,9 +57,11 @@
 		1BABC6F322AEA90B00232E5E /* NetworkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkParser.swift; sourceTree = "<group>"; };
 		1BAC2AD72289A9A20061E187 /* OggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OggettoAcquistabile.swift; sourceTree = "<group>"; };
 		1BAC2AD92289ACBB0061E187 /* CellOggettoAcquistabile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellOggettoAcquistabile.swift; sourceTree = "<group>"; };
+		1BC2DBE722C511AE008A94B1 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		1BC2DBE922C511ED008A94B1 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		1BC2DBEC22C5139B008A94B1 /* 209578__zott820__cash-register-purchase.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "209578__zott820__cash-register-purchase.wav"; sourceTree = "<group>"; };
 		1BD6D1952292EDCA00845766 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		1BF4597722C38A47001CB2E5 /* CellCarrello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCarrello.swift; sourceTree = "<group>"; };
-		1BF4597A22C38B2B001CB2E5 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashController.swift; path = ../ViewControllers/SplashController.swift; sourceTree = "<group>"; };
 		1BF4597D22C38B62001CB2E5 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		1BF4597F22C38B81001CB2E5 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		1BF4598122C38C12001CB2E5 /* CartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
@@ -74,7 +77,6 @@
 		E39E05E62252643E00752B62 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E3DF1EE8225B8455007B4822 /* Utente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utente.swift; sourceTree = "<group>"; };
 		E3DF1EEA225B8532007B4822 /* LoginUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUtility.swift; sourceTree = "<group>"; };
-		E3DF1EEC225B86E0007B4822 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		E3DF1EEE225B9106007B4822 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		E3DF1EF0225B9AB5007B4822 /* CellEvento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEvento.swift; sourceTree = "<group>"; };
 		E3DF1EF2225B9D93007B4822 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -111,12 +113,11 @@
 				1B06BC93229D97A0000E7498 /* DettaglioEventoController.swift */,
 				E39E05E62252643E00752B62 /* LoginController.swift */,
 				1B7A19B3229C267200A0FF06 /* MappaController.swift */,
+				1BC2DBE722C511AE008A94B1 /* SplashController.swift */,
 				1BD6D1952292EDCA00845766 /* MainTabBarController.swift */,
-				E3DF1EEC225B86E0007B4822 /* SplashController.swift */,
 				1BF4597D22C38B62001CB2E5 /* RegisterController.swift */,
 				1BF4597F22C38B81001CB2E5 /* ProfileController.swift */,
 				E3DF1EF2225B9D93007B4822 /* HomeController.swift */,
-				1BF4597A22C38B2B001CB2E5 /* SplashController.swift */,
 				1BF4598122C38C12001CB2E5 /* CartController.swift */,
 			);
 			path = Controllers;
@@ -163,6 +164,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		1BC2DBEB22C511F1008A94B1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2DBE922C511ED008A94B1 /* Sound.swift */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		1BC2DBEE22C513A1008A94B1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2DBEC22C5139B008A94B1 /* 209578__zott820__cash-register-purchase.wav */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		E39E05C822524D3400752B62 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +202,8 @@
 			children = (
 				E39E05D422524D3400752B62 /* AppDelegate.swift */,
 				1B7A19B7229C34E200A0FF06 /* Database.swift */,
+				1BC2DBEB22C511F1008A94B1 /* Framework */,
+				1BC2DBEE22C513A1008A94B1 /* resources */,
 				1B8A7913229C1F30003B283B /* Models */,
 				1B8A7912229C1ECA003B283B /* Views */,
 				1B8A7910229C1EBC003B283B /* Utilities */,
@@ -256,6 +275,7 @@
 			files = (
 				E39E05DF22524D3700752B62 /* LaunchScreen.storyboard in Resources */,
 				E39E05DC22524D3700752B62 /* Assets.xcassets in Resources */,
+				1BC2DBED22C5139B008A94B1 /* 209578__zott820__cash-register-purchase.wav in Resources */,
 				E39E05DA22524D3400752B62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +296,6 @@
 				E39E05D522524D3400752B62 /* AppDelegate.swift in Sources */,
 				E3DF1EEB225B8532007B4822 /* LoginUtility.swift in Sources */,
 				E3DF1EF3225B9D93007B4822 /* HomeController.swift in Sources */,
-				1BF4597B22C38B2B001CB2E5 /* SplashController.swift in Sources */,
 				E39E05E72252643E00752B62 /* LoginController.swift in Sources */,
 				1BF4597822C38A47001CB2E5 /* CellCarrello.swift in Sources */,
 				1BD6D1962292EDCA00845766 /* MainTabBarController.swift in Sources */,
@@ -291,9 +310,10 @@
 				1BF4598622C38CA7001CB2E5 /* CartUtility.swift in Sources */,
 				1BAC2ADA2289ACBB0061E187 /* CellOggettoAcquistabile.swift in Sources */,
 				1B06BC92229D9536000E7498 /* PinMappa.swift in Sources */,
+				1BC2DBE822C511AE008A94B1 /* SplashController.swift in Sources */,
 				1B722AD822C4A65100F56E63 /* Meteo.swift in Sources */,
+				1BC2DBEA22C511EE008A94B1 /* Sound.swift in Sources */,
 				1BA34211228070940017E61E /* NetworkUtility.swift in Sources */,
-				E3DF1EED225B86E0007B4822 /* SplashController.swift in Sources */,
 				1B7A19B8229C34E200A0FF06 /* Database.swift in Sources */,
 				1BF4598422C38C8C001CB2E5 /* LocationUtility.swift in Sources */,
 				1BAC2AD82289A9A20061E187 /* OggettoAcquistabile.swift in Sources */,

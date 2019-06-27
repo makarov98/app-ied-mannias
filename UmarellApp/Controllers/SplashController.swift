@@ -1,15 +1,15 @@
 //
 //  SplashController.swift
-//  Balistreri
+//  UmarellApp
 //
-//  Created by ieduser on 08/04/2019.
+//  Created by IED Student on 27/06/2019.
 //  Copyright © 2019 IED. All rights reserved.
 //
 
 import UIKit
 
 class SplashController : UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -26,5 +26,5 @@ class SplashController : UIViewController {
             performSegue(withIdentifier: "VaiAllaHome", sender: self)
         }
     }
-
+    
 }

@@ -211,6 +211,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="accediButton" destination="F78-GS-BNf" id="UGi-jE-Zxr"/>
                         <outlet property="buttonAccedi" destination="F78-GS-BNf" id="rz4-wL-IV7"/>
                         <outlet property="textEmail" destination="QnV-3u-b2g" id="Evi-aE-gDO"/>
                         <outlet property="textPassword" destination="uYE-NI-i72" id="Og7-F8-pgR"/>
