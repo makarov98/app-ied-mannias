@@ -75,7 +75,7 @@ UICollectionViewDelegateFlowLayout {
         
         
         //Metto l'immagine dell'evento
-        NetworkUtility.downloadImmagine(indirizzoWeb: evento.immagineUrl, perImageView: immagineCopertina)
+        NetworkUtility.downloadImmagine(indirizzoWeb: evento.copertinaUrl, perImageView: immagineCopertina)
         
         let data = DateUtility.stringa(conData: evento.data, formato: "dd/MM/yyyy")
         dataLabel.text = data
@@ -91,6 +91,7 @@ UICollectionViewDelegateFlowLayout {
         
         //Metto la tempertura
         labelMeteo.text =  " "
+        
         Network.richiestaMeteoEvento(evento) {
             //Questa parte di codice viene eseguita solo quando  viene ricevuot il meteo dal server
             (meteo) in
@@ -140,7 +141,7 @@ UICollectionViewDelegateFlowLayout {
         
         let oggetto = evento?.oggettiAcquistabili?[indexPath.item]
         
-        cella.setupConOggettoAcquistabile(oggetto)
+        // cella.setupConOggettoAcquistabile(oggetto)
         
         return cella
     }
@@ -203,6 +204,6 @@ UICollectionViewDelegateFlowLayout {
         }
     }
     @IBAction func aggiungiAlCarrello(_ sender: Any) {
-        chiediConfermaAcquisto(oggetto: evento)
+        // chiediConfermaAcquisto(oggetto: evento)
     }
 }

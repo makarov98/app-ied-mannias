@@ -24,13 +24,14 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Cambio il titolo della schermata
         navigationItem.title = "Lista eventi"
         
-        
+        listaEventi = Database.eventi
+
         
         //Metto in comunicazione la table view
         tableView.delegate = self
         tableView.dataSource = self
         
-        listaEventi = Database.eventi
+        tableView.reloadData()
     }
     
     

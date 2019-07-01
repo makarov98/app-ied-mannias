@@ -212,7 +212,6 @@
                     </view>
                     <connections>
                         <outlet property="accediButton" destination="F78-GS-BNf" id="UGi-jE-Zxr"/>
-                        <outlet property="buttonAccedi" destination="F78-GS-BNf" id="rz4-wL-IV7"/>
                         <outlet property="textEmail" destination="QnV-3u-b2g" id="Evi-aE-gDO"/>
                         <outlet property="textPassword" destination="uYE-NI-i72" id="Og7-F8-pgR"/>
                         <segue destination="dBm-DE-Pc1" kind="presentation" identifier="VaiAllaHome" id="4Ro-mJ-l8w"/>
@@ -574,8 +573,9 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-wM-UUh" userLabel="Target Button" customClass="UIButton">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-wM-UUh" userLabel="Target Button" customClass="UIButton">
                                 <rect key="frame" x="303" y="79" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="target" translatesAutoresizingMaskIntoConstraints="NO" id="SEE-gX-gwf">
                                         <rect key="frame" x="16" y="16" width="24" height="24"/>
@@ -586,12 +586,6 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="SEE-gX-gwf" firstAttribute="top" secondItem="RKo-wM-UUh" secondAttribute="top" constant="16" id="G3k-0k-SHD"/>
-                                    <constraint firstAttribute="bottom" secondItem="SEE-gX-gwf" secondAttribute="bottom" constant="16" id="aYg-MZ-ewt"/>
-                                    <constraint firstAttribute="trailing" secondItem="SEE-gX-gwf" secondAttribute="trailing" constant="16" id="gBq-Xd-5wb"/>
-                                    <constraint firstItem="SEE-gX-gwf" firstAttribute="leading" secondItem="RKo-wM-UUh" secondAttribute="leading" constant="16" id="gqG-ZO-h7w"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

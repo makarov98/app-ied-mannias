@@ -28,7 +28,7 @@ class Database {
         // creo un oggetto acquistabile di prova
         let acquistabileUno = OggettoAcquistabile()
         acquistabileUno.nome = "Maglia"
-        acquistabileUno.quantita = 1
+        acquistabileUno.quantità = 1
         acquistabileUno.prezzo = 10
         acquistabileUno.immagineUrl = "http://images.unsplash.com/photo-1508963493744-76fce69379c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         

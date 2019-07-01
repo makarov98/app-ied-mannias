@@ -29,15 +29,15 @@ class ProfileController: UIViewController{
         
         NetworkUtility.downloadImmagine(indirizzoWeb: "http://ied.apptoyou.it/app/avatars/default.jpg", perImageView: profileImage)
         labelNome.text = LoginUtility.utenteConnesso?.nome
-        labelRegistratoDa.text = LoginUtility.utenteConnesso?.timestamp
+        // labelRegistratoDa.text = LoginUtility.utenteConnesso?.timestamp
         
         labelCredito.text = LoginUtility.utenteConnesso?.email
         
         
         //labelCredito.text = stringCredito
         
-        labelCitta.text = LoginUtility.utenteConnesso?.citta
-        labelData.text = LoginUtility.utenteConnesso?.dataDiNascita
+        // labelCitta.text = LoginUtility.utenteConnesso?.citta
+        // labelData.text = LoginUtility.utenteConnesso?.dataDiNascita
         
         
         

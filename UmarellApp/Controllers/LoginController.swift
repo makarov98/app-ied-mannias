@@ -60,6 +60,11 @@ class LoginController: UIViewController {
             //Dati non validi
             return
         }
+        
+        //Vado alla home
+        self.performSegue(withIdentifier: "VaiAllaHome", sender: self)
+        
+        /*
         Network.richiestaLogin(conEmail: textEmail.text, password: textPassword.text) {
             (utente) in
             
@@ -78,6 +83,7 @@ class LoginController: UIViewController {
             }
         }
         print("Dati validi")
+         */
     }
     
 }

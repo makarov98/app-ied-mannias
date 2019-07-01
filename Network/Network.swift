@@ -33,7 +33,7 @@ class Network {
     
     typealias CompletitionMeteo = ((Meteo?) -> Void)
     
-    static func richiestaMeteoEvento(_ evento: Evento?) {
+    static func richiestaMeteoEvento(_ evento: Evento?, completion: CompletitionMeteo?) {
         
         // Check validità dei dati
         guard let coordinate = evento?.coordinate else {
@@ -65,6 +65,8 @@ class Network {
                     
                     print("La temperatura è: \(meteo?.temperatura ?? 0)")
                     print("La descrizione è: \(meteo?.descrizione ?? "")")
+                    
+                    completion?(meteo)
                 }
                 
             }
